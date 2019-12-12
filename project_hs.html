@@ -1,0 +1,2159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TOY SHOP</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <style>
+    .checked {
+      color: orange;
+    }
+    *{
+      margin: 0vw;
+      padding: 0vw;
+      font-family: futura;
+    }
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track{
+      background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb{
+      background: #888;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+      background: #555;
+    }
+    .a{
+      height: 90vh;
+      width: 100%;
+      top: 0vh;
+      max-width: 100%;
+      position: absolute;
+      margin: auto;
+    }
+    .b{
+      height: 80vh;
+      width: 100%;
+      top: 90vh;
+      position:absolute;
+      background-color: whitesmoke;
+    }
+    .b1{
+      height: 8vh;
+      left: 4vw;
+      right: 4vw;
+      top: 2vh;
+      position:absolute;
+      background-color: #ff0000;
+      transform: skewX(45deg);
+      opacity: 0.7;
+    }
+    .b2{
+      height: 8vh;
+      left: 4vw;
+      right: 4vw;
+      top: 4vh;
+      position:absolute;
+      background-color: #0066ff;
+      transform: skewX(-45deg);
+      opacity: 0.7;
+    }
+    .b3{
+      transform: translateX(225%);
+      height: 3vh;
+      width: 20vw;
+      top: 3vh;
+      position:absolute;
+      background-color: transparent;
+      align-content: center;
+    }
+    .c{
+      height: 80vh;
+      width: 100%;
+      top: 300vh;
+      position:absolute;
+      background-color: whitesmoke;
+    }
+    .c1{
+      height: 8vh;
+      left: 4vw;
+      right: 4vw;
+      top: 2vh;
+      position:absolute;
+      background-color: #ff0000;
+      transform: skewX(45deg);
+      opacity: 0.7;
+    }
+    .c2{
+      height: 8vh;
+      left: 4vw;
+      right: 4vw;
+      top: 4vh;
+      position:absolute;
+      background-color: #0066ff;
+      transform: skewX(-45deg);
+      opacity: 0.7;
+    }
+    .c3{
+      transform: translateX(210%);
+      height: 3vh;
+      width: 20vw;
+      top: 3vh;
+      position:absolute;
+      background-color: transparent;
+      align-content: center;
+    }
+    .d{
+      height: 80vh;
+      width: 100%;
+      top: 500vh;
+      position:absolute;
+      background-color: whitesmoke;
+    }
+    .d1{
+      height: 8vh;
+      left: 4vw;
+      right: 4vw;
+      top: 2vh;
+      position:absolute;
+      background-color: #ff0000;
+      transform: skewX(45deg);
+      opacity: 0.7;
+    }
+    .d2{
+      height: 8vh;
+      left: 4vw;
+      right: 4vw;
+      top: 4vh;
+      position:absolute;
+      background-color: #0066ff;
+      transform: skewX(-45deg);
+      opacity: 0.7;
+    }
+    .d3{
+      transform: translateX(215%);
+      height: 3vh;
+      width: 20vw;
+      top: 3vh;
+      position:absolute;
+      background-color: transparent;
+      align-content: center;
+    }
+    .e{
+      height: 80vh;
+      width: 100%;
+      top: 700vh;
+      position:absolute;
+      background-color: whitesmoke;
+    }
+    .e1{
+      height: 8vh;
+      left: 4vw;
+      right: 4vw;
+      top: 2vh;
+      position:absolute;
+      background-color: #ff0000;
+      transform: skewX(45deg);
+      opacity: 0.7;
+    }
+    .e2{
+      height: 8vh;
+      left: 4vw;
+      right: 4vw;
+      top: 4vh;
+      position:absolute;
+      background-color: #0066ff;
+      transform: skewX(-45deg);
+      opacity: 0.7;
+    }
+    .e3{
+      transform: translateX(225%);
+      height: 3vh;
+      width: 20vw;
+      top: 3vh;
+      position:absolute;
+      background-color: transparent;
+      align-content: center;
+    }
+    p{
+      height: 4vh;
+      width: 30vh;
+      font-weight: bold;
+      top: 1.2vh;
+      position: absolute;
+      font-size: 6vh;
+      color: ivory;
+    }
+    .f{
+      background-color: #333333;
+      color: white;
+      top: 780vh;
+      height: 50vh;
+      width: 100%;
+      position:absolute;
+    }
+    .header
+    {
+      top: 0vh;
+      width: 100%;
+      height: 7vh;
+      position: fixed;
+      z-index: 10;
+      background-color: transparent;
+      display: block;
+    }
+    .header ul
+    {
+      list-style: none;
+      font-family: futura;
+      font-size: 2vh;
+    }
+    .header ul li
+    {
+      line-height: 5vh;
+      text-align: center;
+      color: white;
+      transition: 1s;
+      float: right;
+      left: 13vw;
+      border-radius: 1vh;
+      margin: 0.5vw;
+      cursor: pointer;
+    }
+    .header ul li.h:hover
+    {
+      color: orange;
+    }
+    .logo
+    {
+      height: 20vh;
+      width: 9vw;
+      top: 0;
+      left: 0;
+      position: fixed;
+      z-index: 15;
+    }
+    .logo:hover{
+      animation-name: LogoShake;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+    }
+    .dn{
+      position: fixed;
+      height: 80vh;
+      width: 80vw;
+      top: 10vh;
+      left: 10vw;
+      background-color: white;
+      z-index: 5;
+      border-radius: 3vh;
+      border-color: black;
+      border-width: 1px;
+      border-style: solid;
+    }
+    .dni{
+      height: 40vh;
+      width: 20vw;
+      position: absolute;
+      top: 20vh;
+      left: 5vw;
+    }
+    .exit1{
+      height: 7vh;
+      width: 7vh;
+      top: 2vh;
+      right: 2vh;
+      position: absolute;
+      border-radius: 50%;
+      border-color: transparent;
+      background-color: transparent;
+      border-width: 2px;
+      border-style: solid;
+      z-index: 1;
+    }
+    .exit1:hover{
+      border-color: LightGrey;
+    }
+    .li1{
+      position: absolute;
+      top: 5.9vh;
+      right: 2.4vh;
+      height: 0.5vh;
+      width: 7vh;
+      background-color: LightGrey;
+      transform: rotate(45deg);
+    }
+    .li2{
+      position: absolute;
+      top: 5.9vh;
+      right: 2.4vh;
+      height: 0.5vh;
+      width: 7vh;
+      background-color: LightGrey;
+      transform: rotate(-45deg);
+    }
+    @keyframes LogoShake {
+      0%{transform: rotate(0deg);}
+      12.5%{transform: rotate(10deg);}
+      25%{transform: rotate(0deg);}
+      37.5%{transform: rotate(-10deg);}
+      50%{transform: rotate(0deg);}
+      67.5%{transform: rotate(10deg);}
+      75%{transform: rotate(0deg);}
+      87.5%{transform: rotate(-10deg);}
+      100%{transform: rotate(0deg);}
+    }
+    .note{
+      font-size: 4vh;
+      top: 15vh;
+      position: absolute;
+      left: 30vw;
+      height: 40vh;
+      width: 40vw;
+      background-color: transparent;
+      line-height: 5vh;
+    }
+  </style>
+
+  </head>
+  <body>
+    <img src="teddy.png" class="logo">
+    <div class="header" id="header">
+      <ul>
+              <a href="#a" style="transition:2s;"><li class="h">HOME</li></a>
+              <li></li>
+              <li class="h dev">DEVELOPER'S NOTE</li>
+      </ul>
+    </div>
+    <div class="dn">
+      <img src="developer.jpg" alt="CHECK INTERNET CONNECTION" class="dni">
+      <h2 class="title">NOTE:-</h2>
+      <div class="note">
+      <ul type="circle">
+        <li>This to inform you that this is a demo website made just for the sake of entertainment and not for any commercial use.</li>
+        <li>The images use in this website are either free or taken from other websites.</li>
+        <li>The description of any product found in this website is taken from other websites.</li>
+        <li>The developer of this website is Aditya Taparia and the images are been edited by him.</li>
+        <li>You can see the details of the product by clicking on and you can also try to buy it.</li>
+        <li>Don't forget to give review about the site and also try hovering over the logo.</li>
+      </ul>
+      </div>
+      <div class="exit1"></div>
+      <div class="li1"></div>
+      <div class="li2"></div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript">
+      $(document).ready(function(){
+        $(".dn").hide();
+        $(".dev").click(function(){
+          $(".dn").show(300);
+        });
+        $(".exit1").click(function(){
+          $(".dn").hide(300);
+        });
+      });
+      window.onscroll=function(){scrollFunction()};
+      document.getElementById("header").style.transition="2s";
+      function scrollFunction(){
+        if(document.body.scrollTop>100||document.documentElement.scrollTop>100){
+          document.getElementById("header").style.backgroundColor="rgba(50, 50, 50, 0.7)";
+        }  else{
+          document.getElementById("header").style.backgroundColor="transparent";
+          document.getElementById("header").style.color="White";
+        }
+      }
+      $(document).ready(function() {
+         $(".chat-box").hide();
+         $(".chat-button").show();
+         $(".close").click(function(){
+           $(".chat-box").hide(1000);
+           $(".chat-button").show(1000);
+         });
+         $(".chat-button").click(function(){
+           $(".chat-button").hide(1000);
+           $(".chat-box").show(1000);
+         });
+      });
+    </script>
+    <style media="screen">
+      .chat-button{
+        bottom: 2vh;
+        right: 2vh;
+        height: 10vh;
+        width: 10vh;
+        position:fixed;
+        border-radius: 50%;
+        color: white;
+        background-color: grey;
+        z-index: 10;
+        line-height: 9.5vh;
+        cursor: pointer;
+        border-color: black;
+        border-width: thin;
+        border-style: solid;
+        opacity: 0.9;
+        font-size: 2.3vh;
+        animation-name: shake;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes shake {
+        48%{transform: rotate(0deg);}
+        48.5%{transform: rotate(45deg);}
+        49%{transform: rotate(0deg);}
+        49.5%{transform: rotate(-45deg);}
+        50%{transform: rotate(0deg);}
+        50.5%{transform: rotate(45deg);}
+        51%{transform: rotate(0deg);}
+        51.5%{transform: rotate(-45deg);}
+        52%{transform: rotate(0deg);}
+      }
+      .chat-box{
+        bottom: 2vh;
+        right: 2vh;
+        height: 40vh;
+        width: 40vh;
+        position:fixed;
+        border-radius: 2vh;
+        background-color: whitesmoke;
+        z-index: 10;
+        border-color: black;
+        border-width: thin;
+        border-style: solid;
+        opacity: 0.9;
+      }
+      .send{
+        top:auto;
+        bottom:-5.4vh;
+        left: 0.5vh;
+        height: 5vh;
+        width: 15vh;
+        position: absolute;
+        border-radius: 1vh;
+        background-color: green;
+        cursor: pointer;
+        color: white;
+      }
+      .close{
+        top: auto;
+        bottom: 1.7vh;
+        right: 0.5vh;
+        height: 5vh;
+        width: 15vh;
+        position: absolute;
+        border-radius: 1vh;
+        background-color: red;
+        cursor: pointer;
+        color: white;
+      }
+      .chat{
+        font-size: 4vh;
+      }
+      .heading{
+        top:1vh;
+        align: center;
+        position:absolute;
+        color: crimson;
+        font-size: 4vh;
+        font-weight: bold;
+        left: 9.5vh;
+        right: 9.5vh;
+      }
+      .message{
+        top: 4vh;
+        position: absolute;
+        font-size: 3.5vh;
+        left:2vh;
+        right: 2vh;
+      }
+    </style>
+  <div>
+  <div class="chat-box">
+    <h4 class="heading"> GIVE REVIEW </H4>
+    <form action="" method="post" class="message">
+      <label>Your Name</label><br>
+      <input type="text" name="a" placeholder="Name" required><br>
+      <label>Message</label><br>
+      <textarea name="ta" rows="5vh" cols="25vh" placeholder="Type The Message Here" required></textarea><br>
+      <button class="send"><span class="chat">SEND</span></button>
+
+    </form>
+      <button class="close"><span class="chat">CLOSE</span></button>
+    </div>
+    <div class="chat-button">
+      <h3 style="padding: 0.75vh;"> REVIEW </h3>
+    </div>
+  </div>
+<div class="parallax1">
+  <div class="a" id="a">
+      <style>
+        .myslides{
+          display: none;
+        }
+        .slideshow{
+          height: 90vh;
+          width: 100%;
+          top: 0vh;
+          position: relative;
+        }
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+        img{
+          vertical-align: middle;
+        }
+        .dot {
+          top: 85vh;
+          position: absolute;
+          text-align: center;
+          height: 2vh;
+          width: 2vh;
+          margin: 0 2px;
+          background-color: silver;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+          border-color: black;
+          border-width: 1px;
+          border-style: solid;
+        }
+        .active {
+          background-color: SlateGrey;
+        }
+        .click{
+          height: 5vh;
+          width: 20vh;
+          position: absolute;
+        }
+        a{
+          text-decoration: none;
+          transition: 5s;
+        }
+        .no1{
+          bottom:35vh;
+          right: 32vw;
+          border-radius: 2vh;
+          background-color: tomato;
+          text-align: center;
+          font-size: 5vh;
+          border-color: red;
+          border-width: 1px;
+          border-style: solid;
+          color: white;
+          transition: 1s;
+        }
+        .no1:hover{
+          transition: 1s;
+          background-color: ForestGreen;
+          border-color: DarkGreen;
+        }
+        .no2{
+          bottom:37vh;
+          right: 12.5vw;
+          border-radius: 2vh;
+          background-color: tomato;
+          text-align: center;
+          font-size: 5vh;
+          border-color: red;
+          border-width: 1px;
+          border-style: solid;
+          color: white;
+          transition: 1s;
+        }
+        .no2:hover{
+          transition: 1s;
+          background-color: ForestGreen;
+          border-color: DarkGreen;
+        }
+      </style>
+      <div class="myslides fade">
+          <img src="img1.jpg" class="slideshow">
+          <a href="#e">
+          <div class="click no1">
+            Buy Now
+          </div>
+          </a>
+      </div>
+      <div class="myslides fade">
+          <img src="img2.jpg" class="slideshow">
+      </div>
+      <div class="myslides fade">
+          <img src="img5.jpg" class="slideshow">
+          <a href="#e">
+          <div class="click no2">
+            Buy
+          </div>
+          </a>
+      </div>
+      <div class="myslides fade">
+          <img src="img4.jpg" class="slideshow">
+      </div>
+      <div class="myslides fade">
+          <img src="img3.jpg" class="slideshow">
+      </div>
+      <div style="text-align:center">
+        <span class="dot p1" style="left: 46%;"></span>
+        <span class="dot p2" style="left: 48%;"></span>
+        <span class="dot p3" style="left: 50%;"></span>
+        <span class="dot p4" style="left: 52%;"></span>
+        <span class="dot p5" style="left: 54%;"></span>
+      </div>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("myslides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 10000);
+        }
+      </script>
+    </div>
+
+    <script type="text/javascript" language="javascript">
+      $(".no1").click(function() {
+        $(".bce3").show(500);
+      });
+      $(".no2").click(function() {
+        $(".bce2").show(500);
+      });
+      </script>
+    <div class="b" id="b">
+    <div class="fade_in fade1">
+      <div class="b1"></div>
+      <div class="b2"></div>
+      <div class="b3"><p>PUZZLES</p></div>
+    </div>
+    <div class="b4" style="cursor:pointer;">
+      <div class="bi">
+        <img src="puz1.jpg" alt="CHECK INTERNET CONNECTION" class="bi">
+      </div>
+      <div class="bc" style="background-color:DodgerBlue ">
+        <p style="font-size: 4vh;position:absolute;top:8vh;left:7vh;">Mirror Rubik Cube</p>
+        <p style="color: red;font-size: 6vh;position:absolute;top:0vh;left:15vh;">&#8377;140</p>
+      </div>
+    </div>
+    <div class="b5" style="cursor:pointer;">
+      <div class="bi">
+        <img src="puz2.jpg" alt="CHECK INTERNET CONNECTION" class="bi">
+      </div>
+      <div class="bc" style="background-color:DarkOrange">
+        <p style="font-size: 4vh;position:absolute;top:8vh;left:10vh;">Game Of Life</p>
+        <p style="color: red;font-size: 6vh;position:absolute;top:0vh;left:15vh;">&#8377;494</p>
+      </div>
+    </div>
+    <div class="b6" style="cursor:pointer;">
+      <div class="bi">
+        <img src="puz3.jpg" alt="CHECK INTERNET CONNECTION" class="bi">
+      </div>
+      <div class="bc" style="background-color:DarkCyan;">
+        <p style="font-size: 4vh;position:absolute;top:8vh;left:7vh;">&nbspTransformer model</p>
+        <p style="color: red;font-size: 6vh;position:absolute;top:0vh;left:15vh;">&#8377;1,959</p>
+      </div>
+    </div>
+
+    <div class="bbc1">
+      <img src="puz1.jpg" alt="CHECK INTERNET CONNECTION" class="dis">
+      <hr class="division">
+      <h2 class="title">Mirror Rubik Cube 3x3 Silver</h2>
+      <div class="attributes">
+      <ul type="circle">
+        <li>Smooth turning and excellent rotation</li>
+        <li>high end quality</li>
+        <li>Great corner cutting</li>
+        <li>Genuine and Imported</li>
+      </ul>
+      <br>
+      <h3 style="font-size:4vh;">Star Rating</h3>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <br><br>
+      <h3 class="price">&#8377;140</h3>
+      </div>
+
+      <div class="buy">BUY</div>
+      <div class="exit">CLOSE</div>
+      <style media="screen">
+        .buy{
+          text-align: center;
+          line-height: 5vh;
+          right: 5vw;
+          top: 25vh;
+          height: 5vh;
+          width: 10vw;
+          position:absolute;
+          color: white;
+          background-color: tomato;
+          font-size: 5vh;
+          border-radius: 3vh;
+          border: 1px solid crimson;
+          transition: 1s;
+          cursor: pointer;
+        }
+        .buy:hover{
+          box-shadow: 10px 10px 5px grey;
+          transition: 1s;
+        }
+        .exit{
+          text-align: center;
+          line-height: 5vh;
+          right: 5vw;
+          top: 35vh;
+          height: 5vh;
+          width: 10vw;
+          position:absolute;
+          color: white;
+          background-color: ForestGreen;
+          font-size: 5vh;
+          border-radius: 3vh;
+          border: 1px solid DarkGreen;
+          transition: 1s;
+          cursor: pointer;
+        }
+        .exit:hover{
+          box-shadow: 10px 10px 5px grey;
+          transition: 1s;
+        }
+        .price{
+          left: 10vh;
+          font-size: 5vh;
+          color: ForestGreen;
+        }
+        .attributes{
+          font-size: 3vh;
+          top: 15vh;
+          position: absolute;
+          left: 30vw;
+          height: 40vh;
+          width: 20vw;
+          background-color: transparent;
+          line-height: 5vh;
+        }
+        .dis{
+          position: absolute;
+          top: 10vh;
+          height: 50vh;
+          width: 20vw;
+          left: 10vh;
+          background-color: whitesmoke;
+          border-radius: 3vh;
+        }
+        .division{
+          position: absolute;
+          height: 50vh;
+          width: 0.05vh;
+          top: 10vh;
+          bottom: 10vh;
+          left: 40%;
+          right: auto;
+          border-left: 1px solid red;
+          border-radius: 2vh;
+        }
+        .title{
+          text-align: center;
+          font-size: 5vh;
+          position: absolute;
+          right: 45%;
+          top: 2vh;
+          color: red;
+        }
+      </style>
+    </div>
+
+    <div class="bbc2">
+      <img src="puz2(2).jpg" alt="CHECK INTERNET CONNECTION" class="dis">
+      <hr class="division">
+      <h2 class="title">Funskool 2D Game Of Life Board Game</h2>
+      <div class="attributes">
+      <ul type="circle">
+        <li>The Game of Life board game is a 3D, multi-colored game</li>
+        <li>The number of players can go up to eight</li>
+        <li>The game gets more interesting and fun to play when there are more players</li>
+      </ul>
+      <h3 style="font-size:4vh;">Star Rating</h3>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <h3 class="price">&#8377;494</h3>
+      </div>
+
+      <div class="buy">BUY</div>
+      <div class="exit">CLOSE</div>
+    </div>
+    <div class="bbc3">
+      <img src="puz3.jpg" alt="CHECK INTERNET CONNECTION" class="dis">
+      <hr class="division">
+      <h2 class="title">Simon Shadow Saber transformer - 2 in 1 pack</h2>
+      <div class="attributes">
+      <ul type="circle">
+        <li>Create your own motorized model with the reusable blocks</li>
+        <li>Educational Value: Improve Cooperation Skills; Know the shape of the structures and composition</li>
+        <li>transform one model to other</li>
+      </ul>
+      <br>
+      <h3 style="font-size:4vh;">Star Rating</h3>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <br><br>
+      <h3 class="price">&#8377;1,959</h3>
+      </div>
+
+      <div class="buy">BUY</div>
+      <div class="exit">CLOSE</div>
+    </div>
+    <script type="text/javascript" language="javascript">
+      $(document).ready(function(){
+        $(".bbc1").hide();
+        $(".bbc2").hide();
+        $(".bbc3").hide();
+        $(".b4").click(function(){
+          $(".bbc1").show(1000);
+        });
+        $(".exit").click(function(){
+          $(".bbc1").hide(1000);
+        });
+        $(".b5").click(function(){
+          $(".bbc2").show(1000);
+        });
+        $(".exit").click(function(){
+          $(".bbc2").hide(1000);
+        });
+        $(".b6").click(function(){
+          $(".bbc3").show(1000);
+        });
+        $(".exit").click(function(){
+          $(".bbc3").hide(1000);
+        });
+      });
+    </script>
+
+    <style media="screen">
+      .bbc1{
+        position: fixed;
+        height: 70vh;
+        width: 70vw;
+        top: 15vh;
+        left: 15vw;
+        background-color: white;
+        z-index: 5;
+        border-radius: 3vh;
+      }
+      .bbc2{
+        position: fixed;
+        height: 70vh;
+        width: 70vw;
+        top: 15vh;
+        left: 15vw;
+        background-color: white;
+        z-index: 5;
+        border-radius: 3vh;
+      }
+      .bbc3{
+        position: fixed;
+        height: 70vh;
+        width: 70vw;
+        top: 15vh;
+        left: 15vw;
+        background-color: white;
+        z-index: 5;
+        border-radius: 3vh;
+      }
+      .bi{
+        top: 0vh;
+        height: 40vh;
+        width: 20vw;
+        position: absolute;
+        border-radius: 2vh;
+        background: radial-gradient(rgba(225,225,225,0.3) 15%,rgba(0,0,0,0.6) 85%);
+      }
+      .bc{
+        top:35vh;
+        height: 15vh;
+        width: 100%;
+        position: absolute;
+        border-radius: 3vh;
+        background-color: blue;
+        z-index: 1;
+      }
+      .b4{
+        position: absolute;
+        top: 20vh;
+        height: 50vh;
+        width: 20vw;
+        left: 9.5vw;
+        background-color: white;
+        border-radius: 3vh;
+        transition: 1s;
+        box-shadow: 0 0 10px 5px grey;
+      }
+      .b4:hover{
+        box-shadow: 10px 10px 5px grey;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        transition : 1s;
+      }
+      .b5{
+        position: absolute;
+        top: 20vh;
+        height: 50vh;
+        width: 20vw;
+        left: 40vw;
+        background-color: white;
+        border-radius: 3vh;
+        transition: 1s;
+        box-shadow: 0 0 10px 5px grey;
+      }
+      .b5:hover{
+        box-shadow: 10px 10px 5px grey;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        transition : 1s;
+      }
+      .b6{
+        position: absolute;
+        top: 20vh;
+        height: 50vh;
+        width: 20vw;
+        left: 70vw;
+        background-color: white;
+        border-radius: 3vh;
+        transition: 1s;
+        box-shadow: 0 0 10px 5px grey;
+      }
+      .b6:hover{
+        box-shadow: 10px 10px 5px grey;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        transition : 1s;
+      }
+    </style>
+    </div>
+
+  <div class="parallax2">
+    <div class="c" id="c">
+      <div class="fade_in fade2">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"><p>ELECTRONICS</p></div>
+      </div>
+      <div class="c4" style="cursor:pointer;">
+        <div class="ci">
+          <img src="ele1.jpg" alt="CHECK INTERNET CONNECTION" class="ci">
+        </div>
+        <div class="cc" style="background-color:gold">
+          <p style="font-size: 3.5vh;position:absolute;top:8vh;left:7vh;">Remote Controlled Car</p>
+          <p style="color: red;font-size: 6vh;position:absolute;top:0vh;left:15vh;">&#8377;500</p>
+        </div>
+      </div>
+      <div class="c5" style="cursor:pointer;">
+        <div class="ci">
+          <img src="ele2.jpg" alt="CHECK INTERNET CONNECTION" class="ci">
+        </div>
+        <div class="cc" style="background-color:RoyalBlue">
+          <p style="font-size: 3.5vh;position:absolute;top:8vh;left:9vh;">RC Flying Helicopter</p>
+          <p style="color: red;font-size: 6vh;position:absolute;top:0vh;left:15vh;">&#8377;1,500</p>
+        </div>
+      </div>
+      <div class="c6" style="cursor:pointer;">
+        <div class="ci">
+          <img src="ele3(2).jpg" alt="CHECK INTERNET CONNECTION" class="ci">
+        </div>
+        <div class="cc" style="background-color:silver">
+          <p style="font-size: 3.5vh;position:absolute;top:8vh;left:12vh;">RC Batman Car</p>
+          <p style="color: red;font-size: 6vh;position:absolute;top:0vh;left:15vh;">&#8377;1,950</p>
+        </div>
+      </div>
+            <div class="bcc1">
+              <img src="ele1(2).jpg" alt="CHECK INTERNET CONNECTION" class="dis" style="height: 30vh;top: 25vh;">
+              <hr class="division">
+              <h2 class="title">Lamborghini Remote Car</h2>
+              <div class="attributes">
+              <ul type="circle">
+                <li>Lamborghini</li>
+                <li>Electric Powered</li>
+                <li>Full Function Radio Control</li>
+                <li>Rubber Tyers</li>
+                <li>Extreme Detail</li>
+              </ul>
+              <br>
+              <h3 style="font-size:4vh;">Star Rating</h3>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <br><br>
+              <h3 class="price">&#8377;500</h3>
+              </div>
+
+              <div class="buy">BUY</div>
+              <div class="exit">CLOSE</div>
+            </div>
+            <div class="bcc2">
+              <img src="ele2.jpg" alt="CHECK INTERNET CONNECTION" class="dis">
+              <hr class="division">
+              <h2 class="title">RC Flying Helicopter</h2>
+              <div class="attributes">
+              <ul type="circle">
+                <li>Flying and running helicopter</li>
+                <li>Full direction remote control</li>
+                <li>Infra-red technology</li>
+                <li>Light Control & Power Indicator</li>
+                <li>Tuning Knon, Direction Stick, Throrrle Stick</li>
+              </ul>
+              <br>
+              <h3 style="font-size:4vh;">Star Rating</h3>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <br><br>
+              <h3 class="price">&#8377;1,500</h3>
+              </div>
+
+              <div class="buy">BUY</div>
+              <div class="exit">CLOSE</div>
+            </div>
+            <div class="bcc3">
+              <img src="ele3.jpg" alt="CHECK INTERNET CONNECTION" class="dis" style="height: 30vh;top: 25vh;">
+              <hr class="division">
+              <h2 class="title">Air Hogs Remote Control Batman Car</h2>
+              <div class="attributes">
+              <ul type="circle">
+                <li>Full function remote control</li>
+                <li>Doors open with remote</li>
+                <li>Rechargeable battries</li>
+                <li>Front headlamps turn on when car is operated</li>
+              </ul>
+              <br>
+              <h3 style="font-size:4vh;">Star Rating</h3>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <br><br>
+              <h3 class="price">&#8377;1,950</h3>
+              </div>
+
+              <div class="buy">BUY</div>
+              <div class="exit">CLOSE</div>
+            </div>
+            <script type="text/javascript" language="javascript">
+              $(document).ready(function(){
+                $(".bcc1").hide();
+                $(".bcc2").hide();
+                $(".bcc3").hide();
+                $(".c4").click(function(){
+                  $(".bcc1").show(1000);
+                });
+                $(".exit").click(function(){
+                  $(".bcc1").hide(1000);
+                });
+                $(".c5").click(function(){
+                  $(".bcc2").show(1000);
+                });
+                $(".exit").click(function(){
+                  $(".bcc2").hide(1000);
+                });
+                $(".c6").click(function(){
+                  $(".bcc3").show(1000);
+                });
+                $(".exit").click(function(){
+                  $(".bcc3").hide(1000);
+                });
+              });
+            </script>
+
+            <style media="screen">
+              .bcc1{
+                position: fixed;
+                height: 70vh;
+                width: 70vw;
+                top: 15vh;
+                left: 15vw;
+                background-color: white;
+                z-index: 5;
+                border-radius: 3vh;
+              }
+              .bcc2{
+                position: fixed;
+                height: 70vh;
+                width: 70vw;
+                top: 15vh;
+                left: 15vw;
+                background-color: white;
+                z-index: 5;
+                border-radius: 3vh;
+              }
+              .bcc3{
+                position: fixed;
+                height: 70vh;
+                width: 70vw;
+                top: 15vh;
+                left: 15vw;
+                background-color: white;
+                z-index: 5;
+                border-radius: 3vh;
+              }
+              .ci{
+                top: 0vh;
+                height: 40vh;
+                width: 20vw;
+                position: absolute;
+                border-radius: 2vh;
+                background: radial-gradient(rgba(225,225,225,0.3) 15%,rgba(0,0,0,0.6) 85%);
+              }
+              .cc{
+                top:35vh;
+                height: 15vh;
+                width: 100%;
+                position: absolute;
+                border-radius: 3vh;
+                background-color: blue;
+                z-index: 1;
+              }
+              .c4,.c5,.c6{
+                box-shadow: 0 0 10px 5px grey;
+              }
+              .c4:hover{
+                box-shadow: 10px 10px 5px grey;
+                transition : 1s;
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+              }
+              .c5:hover{
+                box-shadow: 10px 10px 5px grey;
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+                transition : 1s;
+              }
+              .c6:hover{
+                box-shadow: 10px 10px 5px grey;
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+                transition : 1s;
+              }
+            </style>
+      <style media="screen">
+        .c4{
+          position: absolute;
+          top: 20vh;
+          height: 50vh;
+          width: 20vw;
+          left: 9.5vw;
+          background-color: white;
+          border-radius: 3vh;
+          transition: 1s;
+        }
+        .c5{
+          position: absolute;
+          top: 20vh;
+          height: 50vh;
+          width: 20vw;
+          left: 40vw;
+          background-color: white;
+          border-radius: 3vh;
+          transition: 1s;
+        }
+        .c6{
+          position: absolute;
+          top: 20vh;
+          height: 50vh;
+          width: 20vw;
+          left: 70vw;
+          background-color: white;
+          border-radius: 3vh;
+          transition: 1s;
+        }
+      </style>
+    </div>
+  <div class="parallax3">
+    <div class="d" id="d">
+      <div class="fade_in fade3">
+       <div class="d1"></div>
+       <div class="d2"></div>
+       <div class="d3"><p>Action-Figure</p></div>
+     </div>
+     <div class="d4" style="cursor:pointer;">
+       <div class="di">
+         <img src="st1.jpg" alt="CHECK INTERNET CONNECTION" class="di">
+       </div>
+       <div class="dc" style="background-color:tomato;">
+         <p style="font-size: 3.3vh;position:absolute;top:8vh;left:8vh;">Captain America Model</p>
+         <p style="color: red;font-size: 6vh;position:absolute;top:0vh;left:15vh;">&#8377;1,799</p>
+       </div>
+     </div>
+     <div class="d5" style="cursor:pointer;">
+       <div class="di">
+         <img src="st2.jpg" alt="CHECK INTERNET CONNECTION" class="di">
+       </div>
+       <div class="dc" style="background-color:DodgerBlue;">
+         <p style="font-size: 3.3vh;position:absolute;top:8vh;left:8vh;">Spider-man Model</p>
+         <p style="color: red;font-size: 6vh;position:absolute;top:0vh;left:15vh;">&#8377;809</p>
+       </div>
+     </div>
+     <div class="d6" style="cursor:pointer;">
+       <div class="di">
+         <img src="st3.jpg" alt="CHECK INTERNET CONNECTION" class="di">
+       </div>
+       <div class="dc" style="background-color:DeepPink;">
+         <p style="font-size: 3.3vh;position:absolute;top:8vh;left:8vh;">Lego Falcon Model</p>
+         <p style="color: red;font-size: 6vh;position:absolute;top:0vh;left:15vh;">&#8377;989</p>
+       </div>
+     </div>
+           <div class="bcd1">
+             <img src="st1.jpg" alt="CHECK INTERNET CONNECTION" class="dis">
+             <hr class="division">
+             <h2 class="title">Funskool Captain Ameerica- Titan Hero Series</h2>
+             <div class="attributes">
+             <ul type="circle">
+               <li>Funskool Brings to you Captain America</li>
+               <li>Speech Sound Effects</li>
+               <li>Titan Hero Electronic Figure</li>
+               <li>x2 1.5V AA Alkaline Batteries Required(Included)</li>
+             </ul>
+             <br>
+             <h3 style="font-size:4vh;">Star Rating</h3>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star"></span>
+             <br><br>
+             <h3 class="price">&#8377;1,799</h3>
+             </div>
+
+             <div class="buy">BUY</div>
+             <div class="exit">CLOSE</div>
+           </div>
+           <div class="bcd2">
+             <img src="st2.jpg" alt="CHECK INTERNET CONNECTION" class="dis">
+             <hr class="division">
+             <h2 class="title">Funskool Spiderman Toy Figure </h2>
+             <div class="attributes">
+             <ul type="circle">
+               <li>Colour: Blue and red with black and white detailing</li>
+               <li>Dimensions: 5.1 x 10.2 x 30.5 cm</li>
+               <li>large sized superhero</li>
+               <li>Titan Hero Series</li>
+             </ul>
+             <br>
+             <h3 style="font-size:4vh;">Star Rating</h3>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star"></span>
+             <span class="fa fa-star"></span>
+             <br><br>
+             <h3 class="price">&#8377;809</h3>
+             </div>
+
+             <div class="buy">BUY</div>
+             <div class="exit">CLOSE</div>
+           </div>
+           <div class="bcd3">
+             <img src="st3(2).jpg" alt="CHECK INTERNET CONNECTION" class="dis" style="height:50vh;width:50vh;">
+             <hr class="division">
+             <h2 class="title">Lego Millennium Falcon Microfighter</h2>
+             <div class="attributes">
+             <ul type="circle">
+               <li>includes a chebacca minifigure</li>
+               <li>Also includes chebacca's bow caster</li>
+               <li>Minute detailing</li>
+             </ul>
+             <br>
+             <h3 style="font-size:4vh;">Star Rating</h3>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <br><br>
+             <h3 class="price">&#8377;989</h3>
+             </div>
+
+             <div class="buy">BUY</div>
+             <div class="exit">CLOSE</div>
+           </div>
+           <script type="text/javascript" language="javascript">
+             $(document).ready(function(){
+               $(".bcd1").hide();
+               $(".bcd2").hide();
+               $(".bcd3").hide();
+               $(".d4").click(function(){
+                 $(".bcd1").show(1000);
+               });
+               $(".exit").click(function(){
+                 $(".bcd1").hide(1000);
+               });
+               $(".d5").click(function(){
+                 $(".bcd2").show(1000);
+               });
+               $(".exit").click(function(){
+                 $(".bcd2").hide(1000);
+               });
+               $(".d6").click(function(){
+                 $(".bcd3").show(1000);
+               });
+               $(".exit").click(function(){
+                 $(".bcd3").hide(1000);
+               });
+             });
+           </script>
+
+           <style media="screen">
+             .bcd1{
+               position: fixed;
+               height: 70vh;
+               width: 70vw;
+               top: 15vh;
+               left: 15vw;
+               background-color: white;
+               z-index: 5;
+               border-radius: 3vh;
+             }
+             .bcd2{
+               position: fixed;
+               height: 70vh;
+               width: 70vw;
+               top: 15vh;
+               left: 15vw;
+               background-color: white;
+               z-index: 5;
+               border-radius: 3vh;
+             }
+             .bcd3{
+               position: fixed;
+               height: 70vh;
+               width: 70vw;
+               top: 15vh;
+               left: 15vw;
+               background-color: white;
+               z-index: 5;
+               border-radius: 3vh;
+             }
+             .di{
+               top: 0vh;
+               height: 40vh;
+               width: 20vw;
+               position: absolute;
+               border-radius: 2vh;
+               background: radial-gradient(rgba(225,225,225,0.3) 15%,rgba(0,0,0,0.6) 85%);
+             }
+             .dc{
+               top:35vh;
+               height: 15vh;
+               width: 100%;
+               position: absolute;
+               border-radius: 3vh;
+               background-color: blue;
+               z-index: 1;
+             }
+             .d4,.d5,.d6{
+               box-shadow: 0 0 10px 5px grey;
+             }
+             .d4:hover{
+               box-shadow: 10px 10px 5px grey;
+               border-color: black;
+               border-width: 1px;
+               border-style: solid;
+               transition : 1s;
+             }
+             .d5:hover{
+               box-shadow: 10px 10px 5px grey;
+               border-color: black;
+               border-width: 1px;
+               border-style: solid;
+               transition : 1s;
+             }
+             .d6:hover{
+               box-shadow: 10px 10px 5px grey;
+               border-color: black;
+               border-width: 1px;
+               border-style: solid;
+               transition : 1s;
+             }
+           </style>
+     <style media="screen">
+       .d4{
+         position: absolute;
+         top: 20vh;
+         height: 50vh;
+         width: 20vw;
+         left: 9.5vw;
+         background-color: white;
+         border-radius: 3vh;
+         transition: 1s;
+       }
+       .d5{
+         position: absolute;
+         top: 20vh;
+         height: 50vh;
+         width: 20vw;
+         left: 40vw;
+         background-color: white;
+         border-radius: 3vh;
+         transition: 1s;
+       }
+       .d6{
+         position: absolute;
+         top: 20vh;
+         height: 50vh;
+         width: 20vw;
+         left: 70vw;
+         background-color: white;
+         border-radius: 3vh;
+         transition: 1s;
+       }
+     </style>
+    </div>
+    <div class="e" id="e">
+      <div class="fade_in fade4">
+      <div class="e1"></div>
+      <div class="e2"></div>
+      <div class="e3"><p>TRENDING</p></div>
+    </div>
+    <div class="e4" style="cursor:pointer;">
+      <div class="ei">
+        <img src="tre1(2).jpg" alt="CHECK INTERNET CONNECTION" class="ei">
+      </div>
+      <div class="ec" style="background-color:LightSlateGrey;">
+        <p style="font-size: 4vh;position:absolute;top:8vh;left:7vh;">Poker Chips Game</p>
+        <p style="color: red;font-size: 6vh;position:absolute;top:0vh;left:15vh;">&#8377;1,080</p>
+      </div>
+    </div>
+    <div class="e5" style="cursor:pointer;">
+      <div class="ei">
+        <img src="tre2.jpg" alt="CHECK INTERNET CONNECTION" class="ei">
+      </div>
+      <div class="ec" style="background-color:MediumSeaGreen;">
+        <p style="font-size: 4vh;position:absolute;top:8vh;left:15vh;">RC Drone</p>
+        <p style="color: red;font-size: 6vh;position:absolute;top:0vh;left:15vh;">&#8377;2,899</p>
+      </div>
+    </div>
+    <div class="e6" style="cursor:pointer;">
+      <div class="ei">
+        <img src="tre3.jpg" alt="CHECK INTERNET CONNECTION" class="ei">
+      </div>
+      <div class="ec" style="background-color:Goldenrod;" id="twelve">
+        <p style="font-size: 4vh;position:absolute;top:8vh;left:15vh;">Force Band</p>
+        <p style="color: red;font-size: 6vh;position:absolute;top:0vh;left:15vh;">&#8377;13,593</p>
+      </div>
+    </div>
+          <div class="bce1">
+            <img src="tre1.jpg" alt="CHECK INTERNET CONNECTION" class="dis">
+            <hr class="division">
+            <h2 class="title">Poker Chip Game Set</h2>
+            <div class="attributes">
+            <ul type="circle">
+              <li>200 casino size poker chips</li>
+              <li>2 decks of playing cards</li>
+              <li>5 red color dice</li>
+              <li>1 deluxe heavy duty aluminium poker chips case</li>
+              <li>Ideal for Diwali and home parties</li>
+            </ul>
+            <br>
+            <h3 style="font-size:4vh;">Star Rating</h3>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <br>
+            <h3 class="price">&#8377;1,080</h3>
+            </div>
+
+            <div class="buy">BUY</div>
+            <div class="exit">CLOSE</div>
+          </div>
+          <div class="bce2">
+            <img src="tre2.jpg" alt="CHECK INTERNET CONNECTION" class="dis">
+            <hr class="division">
+            <h2 class="title">RC Drones Flying Quadcopter</h2>
+            <div class="attributes">
+            <ul type="circle">
+              <li>6 Channel Remote Controlled</li>
+              <li>More than 20 mins of flying time in one charge</li>
+              <li>2 spare blades</li>
+              <li>Can fly up to 25 meters</li>
+              <li>Colorful Flashing Lights</li>
+            </ul>
+            <br>
+            <h3 style="font-size:4vh;">Star Rating</h3>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <br><br>
+            <h3 class="price">&#8377;2,899</h3>
+            </div>
+
+            <div class="buy">BUY</div>
+            <div class="exit">CLOSE</div>
+          </div>
+          <div class="bce3">
+            <img src="tre3(2).jpg" alt="CHECK INTERNET CONNECTION" class="dis" style="height:40vh;">
+            <hr class="division">
+            <h2 class="title">Star Wars:Force Band</h2>
+            <div class="attributes">
+            <ul type="circle">
+              <li>Bluetooth connection to a 30m range</li>
+              <li>Induction charging stand providing 60min battery life</li>
+              <li>4.5 MPH to speed</li>
+              <li>Control the BB 8 droid with Hand gestures like force push, pull and drive.. </li>
+            </ul>
+            <br>
+            <h3 style="font-size:4vh;">Star Rating</h3>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <br><br>
+            <h3 class="price">&#8377;13,593</h3>
+            </div>
+
+            <div class="buy">BUY</div>
+            <div class="exit">CLOSE</div>
+          </div>
+          <script type="text/javascript" language="javascript">
+            $(document).ready(function(){
+              $(".bce1").hide();
+              $(".bce2").hide();
+              $(".bce3").hide();
+              $(".e4").click(function(){
+                $(".bce1").show(1000);
+              });
+              $(".exit").click(function(){
+                $(".bce1").hide(1000);
+              });
+              $(".e5").click(function(){
+                $(".bce2").show(1000);
+              });
+              $(".exit").click(function(){
+                $(".bce2").hide(1000);
+              });
+              $(".e6").click(function(){
+                $(".bce3").show(1000);
+              });
+              $(".exit").click(function(){
+                $(".bce3").hide(1000);
+              });
+            });
+          </script>
+
+          <style media="screen">
+            .bce1{
+              position: fixed;
+              height: 70vh;
+              width: 70vw;
+              top: 15vh;
+              left: 15vw;
+              background-color: white;
+              z-index: 5;
+              border-radius: 3vh;
+            }
+            .bce2{
+              position: fixed;
+              height: 70vh;
+              width: 70vw;
+              top: 15vh;
+              left: 15vw;
+              background-color: white;
+              z-index: 5;
+              border-radius: 3vh;
+            }
+            .bce3{
+              position: fixed;
+              height: 70vh;
+              width: 70vw;
+              top: 15vh;
+              left: 15vw;
+              background-color: white;
+              z-index: 5;
+              border-radius: 3vh;
+            }
+            .ei{
+              top: 0vh;
+              height: 40vh;
+              width: 20vw;
+              position: absolute;
+              border-radius: 2vh;
+              background: radial-gradient(rgba(225,225,225,0.3) 15%,rgba(0,0,0,0.6) 85%);
+            }
+            .ec{
+              top:35vh;
+              height: 15vh;
+              width: 100%;
+              position: absolute;
+              border-radius: 3vh;
+              background-color: blue;
+              z-index: 1;
+            }
+            .e4,.e5,.e6{
+              box-shadow: 0 0 10px 5px grey;
+            }
+            .e4:hover{
+              box-shadow: 10px 10px 5px grey;
+              border-color: black;
+              border-width: 1px;
+              border-style: solid;
+              transition : 1s;
+            }
+            .e5:hover{
+              box-shadow: 10px 10px 5px grey;
+              border-color: black;
+              border-width: 1px;
+              border-style: solid;
+              transition : 1s;
+            }
+            .e6:hover{
+              box-shadow: 10px 10px 5px grey;
+              border-color: black;
+              border-width: 1px;
+              border-style: solid;
+              transition : 1s;
+            }
+          </style>
+    <style media="screen">
+      .e4{
+        position: absolute;
+        top: 20vh;
+        height: 50vh;
+        width: 20vw;
+        left: 9.5vw;
+        background-color: white;
+        border-radius: 3vh;
+        transition: 1s;
+      }
+      .e5{
+        position: absolute;
+        top: 20vh;
+        height: 50vh;
+        width: 20vw;
+        left: 40vw;
+        background-color: white;
+        border-radius: 3vh;
+        transition: 1s;
+      }
+      .e6{
+        position: absolute;
+        top: 20vh;
+        height: 50vh;
+        width: 20vw;
+        left: 70vw;
+        background-color: white;
+        border-radius: 3vh;
+        transition: 1s;
+      }
+    </style>
+  </div>
+    <div class="f" id="f">
+      <a class="bt bt1" href="#" style="text-align: center;">
+        <i class="fa fa-facebook-f"></i>
+      </a>
+      <a class="bt bt2" href="#" style="text-align: center;">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="bt bt3" href="#" style="text-align: center;">
+        <i class="fab fa-google"></i>
+      </a>
+      <a class="bt bt4" href="#" style="text-align: center;">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="bt bt5" href="#" style="text-align: center;">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <br>
+      <hr class="f1">
+      <div class="f2">
+    <p><H6>DEVELOPED BY ADITYA TAPARIA</H6></p>
+      </div>
+      <div class="f0">FOLLOW US</div>
+    </div>
+    <div class="preloader">
+      <img src="teddy.png" alt="Check your network..." class="teddy" align="middle">
+      <h4 class="txt"> Loading .<span class="q">.</span><span class="w">.</span> </h4>
+      <h4 class="txt"> Please Wait </h4>
+    </div>
+    <style media="screen">
+    .f0{
+      position: absolute;
+      top: 2vh;
+      left: 45vw;
+      font-size: 6vh;
+      color:
+    }
+    .ib1
+    {
+      top: 50vh;
+      left: 95vh;
+      line-height: 3vh;
+      height: 4vh;
+      width: 10vw;
+      border-radius: 2vh;
+      position: absolute;
+      background-color: dodgerblue;
+      color: whitesmoke;
+      border: 0px;
+    }
+    .bg button.ib1:hover
+    {
+      background-color: navy;
+      color: white;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    }
+    .bt{
+      display: inline-block;
+      width: 8vh;
+      height: 7vh;
+      background: ivory;
+      border-radius: 30%;
+      overflow: hidden;
+      position: absolute;
+    }
+    .bt i{
+      line-height: 7vh;
+      font-size: 6vh;
+      transition: 0.2s linear;
+    }
+    .bt:hover i{
+      transform: scale(1.07);
+      color:#f1f1f1;
+    }
+    .bt1::before{
+      content: "";
+      position: absolute;
+      width: 120%;
+      height:120%;
+      background: #4267B2;
+      transform:rotate(45deg);
+      left:-110%;
+      top: 90%;
+    }
+    .bt1:hover::before{
+      animation: aaa 0.7s 1;
+      top: -10%;
+      left: -10%;
+    }
+    .bt2::before{
+      content: "";
+      position: absolute;
+      width: 120%;
+      height:120%;
+      background: #1DA1F2;
+      transform:rotate(45deg);
+      left:-110%;
+      top: 90%;
+    }
+    .bt2:hover::before{
+      animation: aaa 0.7s 1;
+      top: -10%;
+      left: -10%;
+    }
+    .bt3::before{
+      content: "";
+      position: absolute;
+      width: 120%;
+      height:120%;
+      background: #BA0C2E;
+      transform:rotate(45deg);
+      left:-110%;
+      top: 90%;
+    }
+    .bt3:hover::before{
+      animation: aaa 0.7s 1;
+      top: -10%;
+      left: -10%;
+    }
+    .bt4::before{
+      content: "";
+      position: absolute;
+      width: 120%;
+      height:120%;
+      background: #833AB4;
+      transform:rotate(45deg);
+      left:-110%;
+      top: 90%;
+    }
+    .bt4:hover::before{
+      animation: aaa 0.7s 1;
+      top: -10%;
+      left: -10%;
+    }
+    .bt5::before{
+      content: "";
+      position: absolute;
+      width: 120%;
+      height:120%;
+      background: #FF0000;
+      transform:rotate(45deg);
+      left:-110%;
+      top: 90%;
+    }
+    .bt5:hover::before{
+      animation: aaa 0.7s 1;
+      top: -10%;
+      left: -10%;
+    }
+    @keyframes aaa {
+      0%{
+        left: -110%;
+        top:90%;
+      }50%{
+        left: 10%;
+        top:-30%;
+      }100%{
+        top:10%;
+        left:-10%;
+      }
+    }
+    .bt1
+    {
+      left:40vw;
+      top: 15vh;
+      color: #4267B2;
+    }
+    .bt2
+    {
+      left:45vw;
+      top: 15vh;
+      color: #1DA1F2;
+    }
+    .bt3
+    {
+      left:50vw;
+      top: 15vh;
+      color: #DB4437;
+    }
+    .bt4
+    {
+      left:55vw;
+      top: 15vh;
+      color: #833AB4;
+    }
+    .bt5
+    {
+      left:60vw;
+      top: 15vh;
+      color: #FF0000;
+    }
+    .f1
+    {
+      align: center;
+      top: 25vh;
+      left: 15vw;
+      position: absolute;
+      width: 70vw;
+    }
+    .f2
+    {
+      align: center;
+      top:27vh;
+      left: 43vw;
+      background-color: transparent;
+      position: absolute;
+    }
+      .preloader{
+        height: 100%;
+        width: 100%;
+        top: 0vh;
+        bottom: 0vh;
+        right: 0vw;
+        left: 0vw;
+        position: fixed;
+        z-index: 15;
+        background-color: white;
+      }
+      .teddy{
+        position: relative;
+        height: 20vh;
+        width: 10vw;
+        top: 37%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        vertical-align: middle;
+        animation: spin 2s linear 3;
+      }
+      @keyframes blink {
+        0%{opacity: 1;}
+        50%{opacity: 0;}
+        100%{opacity: 1;}
+      }
+      .q{
+        animation: blink 6s linear infinite;
+        font-size: 5vh;
+      }
+      .w{
+        animation: blink .5s linear infinite;
+        font-size: 5vh;
+      }
+      @keyframes spin{
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(360deg);}
+      }
+      .txt{
+        position: relative;
+        display: block;
+        top:45%;
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 5vh;
+      }
+    </style>
+    <script type="text/javascript" language="javascript">
+      $(document).ready(function(){
+        $(".preloader").fadeOut(8000);
+      });
+  </script>
+
+</div>
+</div>
+</div>
+</body>
+<style media="screen">
+  .parallax1{
+    height: 700vh;
+    width: 100%;
+    z-index: -1;
+    background-image: radial-gradient(rgba(225,225,225,0.3) 15%,rgba(0,0,0,0.6) 85%),url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .parallax2{
+    height: 500vh;
+    width: 100%;
+    z-index: -2;
+    background-image: radial-gradient(rgba(225,225,225,0.3) 15%,rgba(0,0,0,0.6) 85%),url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .parallax3{
+    height: 300vh;
+    width: 100%;
+    z-index: -3;
+    background-image: radial-gradient(rgba(225,225,225,0.3) 15%,rgba(0,0,0,0.6) 85%),url(bg3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+</style>
+<style media="screen">
+  *{
+    font-size: 3vh;
+  }
+  body{
+    background-color: grey;
+  }
+  .checkout_form{
+    position: fixed;
+    height: 93vh;
+    width: 50vw;
+    top: 3.5vh;
+    left: 25vw;
+    background-color: #f2f2f2;
+    z-index: 5;
+    border-radius: 1vh;
+  }
+  .left{
+    height: 50vh;
+    width: 20vw;
+    top: 2vh;
+    left: 10vh;
+    position: absolute;
+    line-height: 0.5vh;
+  }
+  .right{
+    height: 50vh;
+    width: 20vw;
+    top: 2vh;
+    right: 10vh;
+    position: absolute;
+    line-height: 2vh;
+  }
+.na {
+    width: 90%;
+    margin-bottom: 1.5vh;
+    padding: 1.4vh;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .sub{
+    width: 50%;
+    margin-bottom: 1.5vh;
+    padding: 1.4vh;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .but{
+    width: 50%;
+    margin-bottom: 1.5vh;
+    padding: 1.4vh;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .lab{
+    margin-bottom: 1.7vh;
+    display: block;
+  }
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1.5vh;
+    margin: 10px 0;
+    border: none;
+    width: 50%;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 1s;
+    height: 7.4vh;
+    font-size: 5vh;
+    text-align: center;
+  }
+  .btn:hover {
+    background-color: #45a049;
+    transition: 1s;
+  }
+  .btn-back {
+    background-color: tomato;
+    color: white;
+    padding: 1.5vh;
+    margin: 10px 0;
+    border: none;
+    width: 50%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 5vh;
+    left: 21vw;
+    height: 7.4vh;
+    position: absolute;
+    bottom: -3vh;
+    text-align: center;
+    transition: 1s;
+
+  }
+  .btn-back:hover {
+    background-color: crimson;
+    transition: 1s;
+  }
+  .bottom{
+    height: 10vh;
+    width: 40vw;
+    bottom: 5vh;
+    left: 10vh;
+    position: absolute;
+    line-height: 0.1vh;
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div class="checkout_form">
+  <form class="bill" action="#" method="post">
+    <div class="left">
+      <h3> Billing Address</h3><br><br>
+      <label for="fname"><i class="fa fa-user"></i> Full Name</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="Aditya M." class="na"><br>
+        <label class="lab" for="email"><i class="fa fa-envelope"></i> Email</label><br>
+        <input class="na" type="text" id="email" name="email" placeholder="aditya@example.com"><br>
+        <label class="lab" for="adr"><i class="fa fa-address-card-o"></i> Address</label><br>
+        <input class="na" type="text" id="adr" name="address" placeholder="542 W. 15th Street"><br>
+        <label class="lab" for="city"><i class="fa fa-institution"></i> City</label><br>
+        <input class="na" type="text" id="city" name="city" placeholder="Surat"><br>
+        <label class="lab" for="state">State</label><br>
+        <input class="na" type="text" id="state" name="state" placeholder="NY"><br>
+        <label class="lab" for="zip">Zip</label><br>
+        <input class="na" type="text" id="zip" name="zip" placeholder="10001"><br>
+     </div>
+    <div class="right">
+      <h3>Payment</h3><br><br>
+        <label class="lab" for="fname">Accepted Cards</label>
+        <div class="icon-container">
+          <i class="fa fa-cc-visa" style="color:navy;"></i>
+          <i class="fa fa-cc-amex" style="color:blue;"></i>
+          <i class="fa fa-cc-mastercard" style="color:red;"></i>
+          <i class="fa fa-cc-discover" style="color:orange;"></i>
+        </div><br>
+        <label class="lab" for="cname">Name on Card</label>
+        <input class="na" type="text" id="cname" name="cardname" placeholder="Aditya Mahesh Taparia"><br>
+        <label class="lab" for="ccnum">Credit card number</label>
+        <input class="na" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"><br>
+        <label class="lab" for="expmonth">Exp Month</label>
+        <input class="na" type="text" id="expmonth" name="expmonth" placeholder="December"><br>
+        <label class="lab" for="expyear">Exp Year</label>
+        <input class="na" type="text" id="expyear" name="expyear" placeholder="2019"><br>
+        <label class="lab" for="cvv">CVV</label>
+        <input class="na" type="text" id="cvv" name="cvv" placeholder="352"><br>
+      </div>
+      <div class="bottom">
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <div class="btn-left">
+          <input class="sub btn" type="submit" value="Continue to Buy">
+        </div>
+        <div class="btn-right">
+          <input class="but btn-back" type="button" value="Back">
+        </div>
+      </div>
+  </form>
+</div>
+<script type="text/javascript" language="javascript">
+  $(document).ready(function(){
+    $(".checkout_form").hide();
+    $(".buy").click(function(){
+      $(".checkout_form").show(1000);
+    });
+    $(".btn-right").click(function(){
+      $(".checkout_form").hide(1000);
+    });
+  });
+  </script>
+</body>
+</html>
